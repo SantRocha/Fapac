@@ -1,0 +1,118 @@
+/******* Configurações do fomrulario *******/
+form {
+    border: none;
+    width: 100%;
+}
+
+.vermelho {
+    color: red;
+}
+
+#cadastro {
+    width: 1000px;
+    margin: auto;
+}
+
+.dados-pesquisador {
+    margin: 10px 0px 70px;
+    display: inline-flex;
+    border: 2px solid black;
+}
+
+.dados {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.8em;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.correspondencia {
+    grid-template-columns: 1fr;
+}
+
+.obrigatorio::after {
+    content: "*";
+    color: red;
+}
+
+
+/******* Configurações da foto do fomrulario *******/
+#preview {
+    width: 150px;
+    height: 200px;
+    border: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #0000001c;
+}
+
+#foto, #foto input {
+    align-content: center;
+    border: none;
+}
+
+#foto > * {
+    margin: auto;
+}
+
+#preview img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/******* Configurações dos botões do fomrulario *******/
+
+.desativar {
+    display: none;
+}
+.cancelar{
+    background-color: #ac0000;
+}
+
+.cancelar:hover {
+    background-color: #5a0000;
+    color: white;
+}
+
+
+
+/******* Configurações de responsividade do fomrulario *******/
+@media screen and (max-width: 1050px) {
+
+    .informacoes {
+        padding: 25px;
+    }
+
+    form {
+        width: calc(100% - 50px);
+    }
+
+    .dados-pesquisador {
+        padding: 25px;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    .dados{
+        grid-template-columns: 1fr;
+        gap: 0.4em;
+    }
+
+    .correspondecia {
+        display: block;
+    }
+
+    /******* Configurações de responsividade do cabeçalho da pagina *******/
+
+
+    /******* Configurações de responsividade do corpo da pagina *******/
+
+
+    /******* Configurações de responsividade do rodapé da pagina *******/
+
+
+}

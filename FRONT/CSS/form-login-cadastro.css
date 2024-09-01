@@ -1,0 +1,96 @@
+/******* Configurações do formulario de login *******/
+form {
+    border: 10px solid #006666;
+    margin: auto;
+    width: 450px;
+}
+
+form label::after {
+    content: ":";
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8em;
+    padding: 15px;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: white;
+}
+
+.bot, .bot-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8em;
+}
+
+input, select {
+    border-radius: 5px;
+    padding: 0.5em;
+    border: 1px solid black;
+    font-size: 0.9em;
+}
+
+.enviar, .cancelar, .adicionar, form a {
+    background-color: #006666;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.enviar:hover, .cancelar:hover, .adicionar:hover, form a:hover {
+    background-color: #01acac;
+    color: rgb(0, 0, 0);
+}
+
+.pesquisador {
+    background-color: #01acac;
+    color: black;
+}
+
+.pesquisador:hover {
+    background-color: #006666;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .bot {
+        width: calc(100% - 50px);
+        margin: auto;
+    }
+
+    #pessoais {
+        display: block;
+    }
+
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+    /******* Configurações de responsividade do formulario de login *******/
+
+    #cadastro {
+        width: calc(100% - 50px);
+    }
+
+    .grid {
+        font-size: 1.14em;
+    }
+
+    .bot {
+        grid-template-columns: 1fr;
+    }
+
+    .login {
+        width: calc(100% - 50px);
+    }
+}
