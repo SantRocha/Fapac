@@ -1,6 +1,13 @@
+:root {
+    --verde1: #038E42;
+    --verde2: #2ecc71;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+  }
+
 /******* Configurações do formulario de login *******/
 form {
-    border: 10px solid #006666;
+    border: 10px solid var(--verde1);
     margin: auto;
     width: 450px;
 }
@@ -33,7 +40,7 @@ input, select {
 }
 
 .enviar, .cancelar, .adicionar, form a {
-    background-color: #006666;
+    background-color: var(--verde1);
     color: white;
     border-radius: 5px;
     padding: 0.5em;
@@ -44,17 +51,21 @@ input, select {
 }
 
 .enviar:hover, .cancelar:hover, .adicionar:hover, form a:hover {
-    background-color: #01acac;
+    background-color: var(--verde2);
     color: rgb(0, 0, 0);
 }
 
+button > a {
+    width: 500px;
+}
+
 .pesquisador {
-    background-color: #01acac;
+    background-color: var(--verde2);
     color: black;
 }
 
 .pesquisador:hover {
-    background-color: #006666;
+    background-color: var(--verde1);
     color: white;
 }
 

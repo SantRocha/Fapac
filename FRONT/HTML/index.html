@@ -6,18 +6,21 @@
     <title>SIG FAPAC</title>
     <link rel="stylesheet" href="../CSS/form-login-cadastro.css">
     <link rel="stylesheet" href="../CSS/css-base.css">
+
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="../JAVASCRIPT/menu-responsivo.js" defer></script>
 </head>
 <body>
     <header>
         <div id="logo">
             <a href="http://sig.fapac.ac.gov.br/" title="FAPAC">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPcOtQ3rmu2bbyhu4cRDiiiXZ_VVdo10t_tg&s" alt="LOGO FAPAC">
+                <img src="../IMAGENS/WhatsApp Image 2024-09-03 at 16.53.42 (1).jpeg" alt="LOGO FAPAC">
             </a>
         </div>
         <nav>
-            <ul>
-                <li><a href="#"">English</a></li>
+            <img src="../IMAGENS/menu-abrir.png" alt="Menu" class="nav-icon" id="nav-icon">
+            <ul class="inativo-menu">
+                <a href="#"><li>English</li></a>
             </ul>
         </nav>
     </header>
@@ -32,7 +35,7 @@
 
                 <div class="g-recaptcha" data-sitekey="6LdVWi8UAAAAAJuxXcqhekR5pz7FCyNDAlpzHnYf"></div>
 
-                <button type="submit" class="enviar"><a href="../HTML/pag-inicial.html">Entrar</a></button>
+                <a href="../HTML/pag-inicial.html" target="_parent" rel="noopener noreferrer"><button type="submit" class="enviar">Entrar</button></a>
                 <div class="bot-login">
                     <button type="button" class="enviar">Esqueci a senha</button>
                     <a href="./cadastro-dados-br.html">Cadastrar</a>

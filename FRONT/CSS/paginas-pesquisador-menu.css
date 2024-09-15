@@ -1,0 +1,40 @@
+@media screen and (max-width: 1170px) {
+    header {
+        display: block;
+    }
+
+    
+    #logo img {
+        height: auto;
+        width: 370px;
+        margin: auto;
+    }
+
+    #logo a {
+        margin: auto;
+        display: flex;
+    }
+
+    #logo {
+        margin: auto;
+        padding: 15px 0px;
+    }
+
+    nav {
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    header {
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    header {
+        height: 200px;
+    }
+}

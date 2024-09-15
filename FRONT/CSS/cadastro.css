@@ -1,3 +1,10 @@
+:root {
+    --verde1: #038E42;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+  }
+  
 /******* Configurações do fomrulario *******/
 form {
     border: none;
@@ -13,6 +20,10 @@ form {
     margin: auto;
 }
 
+.cadastro {
+    width: 100%;
+}
+
 .dados-pesquisador {
     margin: 10px 0px 70px;
     display: inline-flex;
@@ -25,6 +36,24 @@ form {
     gap: 0.8em;
     padding: 15px;
     font-size: 1.2em;
+}
+
+.conhecimento {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.conteiner-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addEspecialidadeBtn {
+    font-size: 3em;
+    border: solid black 2px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
 
 .correspondencia {
@@ -69,6 +98,7 @@ form {
 .desativar {
     display: none;
 }
+
 .cancelar{
     background-color: #ac0000;
 }

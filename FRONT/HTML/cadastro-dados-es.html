@@ -9,24 +9,22 @@
     <link rel="stylesheet" href="../CSS/form-login-cadastro.css">
     <link rel="stylesheet" href="../CSS/cadastro.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
-    <script src="../JAVASCRIPT/scripts.js" defer></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="../JAVASCRIPT/previw-imagem.js" defer></script>
+    <script src="../JAVASCRIPT/areasConhecimento.js" defer></script>
+    <script src="../JAVASCRIPT/menu-responsivo.js" defer></script>
 
 </head>
 <body>
     <header>
         <div id="logo">
-            <a href="http://sig.fapac.ac.gov.br/" target="_self" title="FAPAC"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPcOtQ3rmu2bbyhu4cRDiiiXZ_VVdo10t_tg&s" alt="LOGO FAPAC"></a>
+            <a href="http://sig.fapac.ac.gov.br/" title="FAPAC">
+                <img src="../IMAGENS/WhatsApp Image 2024-09-03 at 16.53.42 (1).jpeg" alt="LOGO FAPAC">
+            </a>
         </div>
         <nav>
-            <ul>
-                <!--<li><a href="http://sigfap.ledes.net/blog/" target="_blank" class="first">Blog SIGFAP</a></li>
-                <span class="vertical-line"></span>
-                <li><a href="http://sigfap.ledes.net/forum/" target="_blank" >Fórum SIGFAP</a></li>
-                <span class="vertical-line"></span>-->
-                <li><a href="#" onclick="JavaScript: document.location='language.php';" >English</a></li>
+            <img src="../IMAGENS/menu-abrir.png" alt="Menu" class="nav-icon" id="nav-icon">
+            <ul class="inativo-menu">
+                <a href="#"><li>English</li></a>
             </ul>
         </nav>
     </header>
@@ -102,12 +100,8 @@
                             <option value="140905">Doutorado</option>
                             <option value="1409061">Pós-doutorado</option>
                         </select>
-                        
-                        <label for="areaConhecimento" class="obrigatorio">Área de Conhecimento</label>
-                        <select id="areaConhecimento" name="areaConhecimento" class="obrigatorio" required>
-                            <option value="">Escolher</option>
-                        </select>
                     </div>
+
                     <div id="foto">
                         <div id="preview"></div>
                         <label for="Foto">Foto</label>
@@ -115,8 +109,39 @@
                     </div>
                 </section>
 
-                <div class="g-recaptcha" data-sitekey="6LdVWi8UAAAAAJuxXcqhekR5pz7FCyNDAlpzHnYf"></div>
-                <br>
+                <h3>Área de Conhecimento</h3>
+                <section class="dados-pesquisador cadastro">
+                    <section class="dados conhecimento">
+                        
+                        <label for="areaConhecimento" class="obrigatorio">Área Principal</label>
+                        <label for="subArea1C" class="obrigatorio">Sub Área 1</label>
+                        <label for="subArea2C" class="obrigatorio">Sub Área 2</label>
+                        <label for="subArea3C" class="obrigatorio">Sub Área 3</label>
+
+                        <select id="areaConhecimento0" name="areaConhecimento0" class="obrigatorio" required>
+                            <option value="">Escolher</option>        
+                            <option value="exatas">Ciências Exatas</option>
+                            <option value="humanas">Ciências Humanas</option>
+                        </select>
+                        
+                        <select id="subArea1C0" name="subArea1C0" class="obrigatorio" required>
+                            <option value="">Escolher</option>
+                        </select>
+                        
+                        
+                        <select id="subArea2C0" name="subArea2C0" class="obrigatorio" required>
+                            <option value="">Escolher</option>
+                        </select>
+                        
+                        <select id="subArea3C0" name="subArea3C0" class="obrigatorio" required>
+                            <option value="">Escolher</option>
+                        </select>
+                    
+                    </section>
+                    <div class="conteiner-centro">
+                        <button id="addEspecialidadeBtn">+</button><br><br>
+                    </div>
+                </section>
 
                 <div class="bot">
                     <a href="../HTML/index.html" class="cancelar">Cancelar</a>

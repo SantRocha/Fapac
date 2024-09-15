@@ -9,25 +9,22 @@
     <link rel="stylesheet" href="../CSS/form-login-cadastro.css">
     <link rel="stylesheet" href="../CSS/cadastro.css">
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
-    <script src="../JAVASCRIPT/scripts.js" defer></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="../JAVASCRIPT/pais-select.js" defer></script>
+    <script src="../JAVASCRIPT/estados-select.js" defer></script>
+    <script src="../JAVASCRIPT/menu-responsivo.js" defer></script>
 
 </head>
 <body>
     <header>
         <div id="logo">
-            <a href="http://sig.fapac.ac.gov.br/" target="_self" title="FAPAC"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPcOtQ3rmu2bbyhu4cRDiiiXZ_VVdo10t_tg&s" alt="LOGO FAPAC"></a>
+            <a href="http://sig.fapac.ac.gov.br/" title="FAPAC">
+                <img src="../IMAGENS/WhatsApp Image 2024-09-03 at 16.53.42 (1).jpeg" alt="LOGO FAPAC">
+            </a>
         </div>
         <nav>
-            <ul>
-                <!--<li><a href="http://sigfap.ledes.net/blog/" target="_blank" class="first">Blog SIGFAP</a></li>
-                <span class="vertical-line"></span>
-                <li><a href="http://sigfap.ledes.net/forum/" target="_blank" >Fórum SIGFAP</a></li>
-                <span class="vertical-line"></span>-->
-                <li><a href="#" onclick="JavaScript: document.location='language.php';" >English</a></li>
+            <img src="../IMAGENS/menu-abrir.png" alt="Menu" class="nav-icon" id="nav-icon">
+            <ul class="inativo-menu">
+                <a href="#"><li>English</li></a>
             </ul>
         </nav>
     </header>
@@ -47,7 +44,7 @@
                 <section class="dados-pesquisador dados">
                     <label for="pais" class="obrigatorio">País</label>
                     <select id="pais" name="pais" required>
-                        <option value="Brasil">Brasil</option>
+                        <option value="BR">Brasil</option>
                     </select>
                 
                     <label for="cep" class="obrigatorio brasileiro-endR">CEP</label>
@@ -87,7 +84,7 @@
                 <section class="dados-pesquisador dados">
                     <label for="pais-prof" class="obrigatorio">País</label>
                     <select id="pais-prof" name="pais" required>
-                        <option value="Brasil">Brasil</option>
+                        <option value="BR">Brasil</option>
                     </select>
                 
                     <label for="cep" class="obrigatorio brasileiro-endP">CEP</label>
