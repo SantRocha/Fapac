@@ -3,11 +3,11 @@
     --verde2: #2ecc71;
     --background-color: #f4f4f4;
     --text-color: #333;
-  }
+}
 
 /******* Configurações gerais da pagina *******/
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -25,12 +25,10 @@ body {
     background-color: #41414115;
 }
 
-
 .voltar img {
-    width: 30px;
-    margin: 10px;
+    width: 24px; /* 80% de 30px */
+    margin: 8px; /* 80% de 10px */
 }
-
 
 .inativo {
     display: none;
@@ -40,24 +38,24 @@ body {
 
 header {
     width: 100%;
-    height: 200px;
+    height: 160px; /* 80% de 200px */
     display: inline-flex;
     align-items: center;
     background-color: white;
 }
 
 #logo {
-    margin-left: 40px;
-    padding: 15px 30px;
+    margin-left: 32px; /* 80% de 40px */
+    padding: 12px 24px; /* 80% de 15px 30px */
 }
 
 #logo img {
-    height: 110px;
+    height: 88px; /* 80% de 110px */
 }
 
 nav {
     margin: auto;
-    margin-right: 100px;
+    margin-right: 80px; /* 80% de 100px */
 }
 
 nav ul {
@@ -66,12 +64,12 @@ nav ul {
 }
 
 nav ul li {
-    padding: 5px 15px;
-    font-size: 1.4em;
+    padding: 4px 12px; /* 80% de 5px 15px */
+    font-size: 1.12em; /* 80% de 1.4em */
 }
 
 nav .nav-icon {
-    width: 30px;
+    width: 24px; /* 80% de 30px */
     display: none;
 }
 
@@ -85,27 +83,25 @@ a:hover {
     color: rgb(253, 228, 0);
 }
 
-
 .vertical-line {
-    width: 1px;
-    height: 50px;
+    width: 0.8px; /* 80% de 1px */
+    height: 40px; /* 80% de 50px */
     background-color: #33333354;
     margin: 0 auto;
 }
 
 .linha-cabecalho {
     width: 100%;
-    height: 1px;
+    height: 0.8px; /* 80% de 1px */
     background-color: #3333333d;
 }
-
 
 /******* Configurações do corpo da pagina *******/
 
 main {
     width: 100%;
-    min-width: 650px;
-    min-height: calc(100vb - (202px + 200px));
+    min-width: 520px; /* 80% de 650px */
+    min-height: calc(100vb - (161.6px + 160px)); /* 80% de 202px e 200px */
     align-items: center;
     display: flex;
     align-items: stretch;
@@ -113,23 +109,21 @@ main {
 
 .conteudo-principal {
     width: 90%;
-    max-width: 1100px;
-    min-width: 300px;
-    margin: 0px auto;
-    padding: 60px 25px;
-    border-radius: 7px;
-    box-shadow: 0px 0px 10px #00000013;
+    max-width: 880px; /* 80% de 1100px */
+    min-width: 240px; /* 80% de 300px */
+    margin: 0 auto;
+    padding: 48px 20px; /* 80% de 60px 25px */
+    border-radius: 5.6px; /* 80% de 7px */
+    box-shadow: 0px 0px 8px #00000013; /* 80% de 10px */
 }
-
-
 
 /******* Configurações do rodapé da pagina *******/
 
 footer {
     width: 100%;
-    min-width: 650px;
-    height: 150px;
-    padding: 25px 0px;
+    min-width: 520px; /* 80% de 650px */
+    height: 120px; /* 80% de 150px */
+    padding: 20px 0px; /* 80% de 25px */
     text-align: center;
     display: inline-flex;
     align-items: center;
@@ -137,23 +131,24 @@ footer {
 }
 
 #info-rodape {
-    margin: 50px 100px;
-    width: 65%;
+    margin: 40px 80px; /* 80% de 50px 100px */
+    width: 52%; /* 80% de 65% */
 }
+
 .rodape-line {
-    width: 1px;
-    height: 130px;
+    width: 0.8px; /* 80% de 1px */
+    height: 104px; /* 80% de 130px */
     background-color: #33333354;
     margin: 0 auto;
-    margin: 25px 10px;
+    margin: 20px 8px; /* 80% de 25px 10px */
 }
 
 #redes-rodape {
-    width: 30%;
+    width: 24%; /* 80% de 30% */
 }
 
 .redes-sociais {
-    width: 40px;
+    width: 32px; /* 80% de 40px */
     margin: auto;
 }
 
@@ -167,13 +162,13 @@ footer {
 
     /******* Configurações de responsividade do cabeçalho da pagina *******/
     header {
-        min-width: 400px;
+        min-width: 320px; /* 80% de 400px */
         display: block;
     }
 
     #logo img {
         height: auto;
-        width: 370px;
+        width: 296px; /* 80% de 370px */
         margin: auto;
     }
 
@@ -184,12 +179,12 @@ footer {
 
     #logo {
         margin: auto;
-        padding: 15px 0px;
+        padding: 12px 0px; /* 80% de 15px 0px */
     }
 
     nav {
-        margin-top: 35px;
-        min-width: 400px;
+        margin-top: 28px; /* 80% de 35px */
+        min-width: 320px; /* 80% de 400px */
         width: 100%;
         position: absolute;
     }
@@ -207,9 +202,9 @@ footer {
 
     nav li {
         margin: auto;
-        width: 350px;
+        width: 280px; /* 80% de 350px */
         text-align: center;
-        border-radius: 7px;
+        border-radius: 5.6px; /* 80% de 7px */
     }
 
     nav li:hover {
@@ -224,7 +219,7 @@ footer {
     /******* Configurações de responsividade do corpo da pagina *******/
 
     main {
-        min-width: 400px;
+        min-width: 320px; /* 80% de 400px */
         height: 100%;
         min-height: 70vh;
     }
@@ -233,13 +228,13 @@ footer {
 
     footer {
         height: auto;
-        min-width: 400px;
+        min-width: 320px; /* 80% de 400px */
         display: block;
     }
 
     #info-rodape {
-        margin: 20px auto;
-        width: 80%;
+        margin: 16px auto; /* 80% de 20px */
+        width: 64%; /* 80% de 80% */
         overflow: hidden;
         word-break: break-word;
     }
@@ -250,6 +245,6 @@ footer {
 
     #redes-rodape {
         align-items: center;
-        width: 100%;
+        width: 80%; /* 80% de 100% */
     }
 }

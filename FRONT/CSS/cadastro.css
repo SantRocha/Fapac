@@ -3,8 +3,8 @@
     --secondary-color: #2ecc71;
     --background-color: #f4f4f4;
     --text-color: #333;
-  }
-  
+}
+
 /******* Configurações do fomrulario *******/
 form {
     border: none;
@@ -16,7 +16,7 @@ form {
 }
 
 #cadastro {
-    width: 1000px;
+    width: 800px; /* 80% de 1000px */
     margin: auto;
 }
 
@@ -25,35 +25,37 @@ form {
 }
 
 .dados-pesquisador {
-    margin: 10px 0px 70px;
+    margin: 8px 0px 56px; /* 80% de 10px 0px 70px */
     display: inline-flex;
-    border: 2px solid black;
+    border: 1.6px solid black; /* 80% de 2px */
 }
 
 .dados {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 0.8em;
-    padding: 15px;
-    font-size: 1.2em;
+    grid-template-columns: 1fr 1.6fr; /* Proporcional a 1fr 2fr */
+    gap: 0.64em; /* 80% de 0.8em */
+    padding: 12px; /* 80% de 15px */
+    font-size: 0.96em; /* 80% de 1.2em */
 }
 
 .conhecimento {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Removi a 4ª coluna para manter proporcionalidade */
+    width: calc(100% - 60px);
 }
 
 .conteiner-centro {
+    width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #addEspecialidadeBtn {
-    font-size: 3em;
-    border: solid black 2px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    font-size: 2.4em; /* 80% de 3em */
+    border: solid black 1.6px; /* 80% de 2px */
+    height: 48px; /* 80% de 60px */
+    width: 48px; /* 80% de 60px */
+    border-radius: 50%; /* Proporcional a 50% */
 }
 
 .correspondencia {
@@ -65,16 +67,15 @@ form {
     color: red;
 }
 
-
 /******* Configurações da foto do fomrulario *******/
 #preview {
-    width: 150px;
-    height: 200px;
-    border: 2px solid #000000;
+    width: 120px; /* 80% de 150px */
+    height: 160px; /* 80% de 200px */
+    border: 1.6px solid #000000; /* 80% de 2px */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 8px; /* 80% de 10px */
     background-color: #0000001c;
 }
 
@@ -92,14 +93,13 @@ form {
     max-height: 100%;
 }
 
-
 /******* Configurações dos botões do fomrulario *******/
 
 .desativar {
     display: none;
 }
 
-.cancelar{
+.cancelar {
     background-color: #ac0000;
 }
 
@@ -108,41 +108,30 @@ form {
     color: white;
 }
 
-
-
 /******* Configurações de responsividade do fomrulario *******/
 @media screen and (max-width: 1050px) {
 
     .informacoes {
-        padding: 25px;
+        padding: 20px; /* 80% de 25px */
     }
 
     form {
-        width: calc(100% - 50px);
+        width: calc(100% - 40px); /* 80% de 50px */
     }
 
     .dados-pesquisador {
-        padding: 25px;
+        padding: 20px; /* 80% de 25px */
     }
 }
+
 @media screen and (max-width: 650px) {
 
-    .dados{
+    .dados {
         grid-template-columns: 1fr;
-        gap: 0.4em;
+        gap: 0.32em; /* 80% de 0.4em */
     }
 
     .correspondecia {
         display: block;
     }
-
-    /******* Configurações de responsividade do cabeçalho da pagina *******/
-
-
-    /******* Configurações de responsividade do corpo da pagina *******/
-
-
-    /******* Configurações de responsividade do rodapé da pagina *******/
-
-
 }

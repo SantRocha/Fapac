@@ -3,13 +3,13 @@
     --verde2: #2ecc71;
     --background-color: #f4f4f4;
     --text-color: #333;
-  }
+}
 
 /******* Configurações do formulario de login *******/
 form {
-    border: 10px solid var(--verde1);
+    border: 8px solid var(--verde1); /* 80% de 10px */
     margin: auto;
-    width: 450px;
+    width: 360px; /* 80% de 450px */
 }
 
 form label::after {
@@ -19,35 +19,35 @@ form label::after {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.8em;
-    padding: 15px;
+    gap: 0.64em; /* 80% de 0.8em */
+    padding: 12px; /* 80% de 15px */
     align-items: center;
-    font-size: 1.2em;
+    font-size: 0.96em; /* 80% de 1.2em */
     background-color: white;
 }
 
 .bot, .bot-login {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.8em;
+    gap: 0.64em; /* 80% de 0.8em */
 }
 
 input, select {
-    border-radius: 5px;
-    padding: 0.5em;
+    border-radius: 4px; /* 80% de 5px */
+    padding: 0.4em; /* 80% de 0.5em */
     border: 1px solid black;
-    font-size: 0.9em;
+    font-size: 0.72em; /* 80% de 0.9em */
 }
 
 .enviar, .cancelar, .adicionar, form a {
     background-color: var(--verde1);
     color: white;
-    border-radius: 5px;
-    padding: 0.5em;
+    border-radius: 4px; /* 80% de 5px */
+    padding: 0.4em; /* 80% de 0.5em */
     border: none;
-    font-size: 1em;
+    font-size: 0.8em; /* 80% de 1em */
     font-weight: bold;
-    margin-top: 12px;
+    margin-top: 9.6px; /* 80% de 12px */
 }
 
 .enviar:hover, .cancelar:hover, .adicionar:hover, form a:hover {
@@ -56,7 +56,7 @@ input, select {
 }
 
 button > a {
-    width: 500px;
+    width: 400px; /* 80% de 500px */
 }
 
 .pesquisador {
@@ -69,32 +69,27 @@ button > a {
     color: white;
 }
 
-
-
 @media screen and (max-width: 1050px) {
     .bot {
-        width: calc(100% - 50px);
+        width: calc(100% - 40px); /* 80% de 50px */
         margin: auto;
     }
 
     #pessoais {
         display: block;
     }
-
 }
-
-
 
 @media screen and (max-width: 650px) {
 
     /******* Configurações de responsividade do formulario de login *******/
 
     #cadastro {
-        width: calc(100% - 50px);
+        width: calc(100% - 40px); /* 80% de 50px */
     }
 
     .grid {
-        font-size: 1.14em;
+        font-size: 0.912em; /* 80% de 1.14em */
     }
 
     .bot {
@@ -102,6 +97,6 @@ button > a {
     }
 
     .login {
-        width: calc(100% - 50px);
+        width: calc(100% - 40px); /* 80% de 50px */
     }
 }

@@ -1,12 +1,11 @@
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 936px) { /* 80% de 1170px */
     header {
         display: block;
     }
 
-    
     #logo img {
         height: auto;
-        width: 370px;
+        width: 296px; /* 80% de 370px */
         margin: auto;
     }
 
@@ -17,7 +16,7 @@
 
     #logo {
         margin: auto;
-        padding: 15px 0px;
+        padding: 12px 0px; /* 80% de 15px */
     }
 
     nav {
@@ -25,16 +24,14 @@
     }
 }
 
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 680px) { /* 80% de 850px */
     header {
-        height: 250px;
+        height: 200px; /* 80% de 250px */
     }
 }
 
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 520px) { /* 80% de 650px */
     header {
-        height: 200px;
+        height: 160px; /* 80% de 200px */
     }
 }

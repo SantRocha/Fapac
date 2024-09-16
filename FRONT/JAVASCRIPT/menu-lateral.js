@@ -5,18 +5,20 @@ const mainContent = document.getElementById('main-content');
 
 // Função para ajustar a altura da sidebar de acordo com o main
 function adjustSidebarHeight() {
+    sidebar.style.height = `${400}px`;
     const mainHeight = mainContent.offsetHeight;
     sidebar.style.height = `${mainHeight}px`;
+    console.log(mainHeight)
 }
 
 toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('expanded');
     if (sidebar.classList.contains('expanded')) {
-        menuIcon.src = "../IMAGENS/seta-esquerda.png"; // Troca para imagem de recolher
+        menuIcon.src = "../IMAGENS/seta-esquerda.png";
     } else {
-        menuIcon.src = "../IMAGENS/seta-direita.png"; // Troca para imagem de expandir
+        menuIcon.src = "../IMAGENS/seta-direita.png";
     }
-    adjustSidebarHeight(); // Ajustar altura ao expandir/contrair
+    setTimeout(adjustSidebarHeight, 500);
 });
 
 const menuItems = document.querySelectorAll('.has-submenu');
@@ -26,14 +28,22 @@ menuItems.forEach(item => {
     item.addEventListener('click', () => {
         item.classList.toggle('expanded');
         if (item.classList.contains('expanded')) {
-            toggleSubmenu.src = "../IMAGENS/sinal-de-seta-para-cima-para-navegar.png"; // Troca para seta para cima
+            toggleSubmenu.src = "../IMAGENS/sinal-de-seta-para-cima-para-navegar.png";
         } else {
-            toggleSubmenu.src = "../IMAGENS/sinal-de-seta-para-baixo-para-navegar.png"; // Troca para seta para baixo
+            toggleSubmenu.src = "../IMAGENS/sinal-de-seta-para-baixo-para-navegar.png";
         }
     });
 });
 
-// Ajustar altura da sidebar ao redimensionar a janela
+
 window.addEventListener('resize', adjustSidebarHeight);
-// Ajustar a altura ao carregar a página
 adjustSidebarHeight();
+
+function monitorarLarguraTela() {
+    const largura = window.innerWidth;
+    console.log("A largura da tela é: " + largura + "px");
+    setTimeout(adjustSidebarHeight, 500);
+}
+
+window.addEventListener('resize', monitorarLarguraTela);
+monitorarLarguraTela();
