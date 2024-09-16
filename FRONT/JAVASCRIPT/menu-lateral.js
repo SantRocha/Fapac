@@ -16,7 +16,7 @@ toggleBtn.addEventListener('click', () => {
     } else {
         menuIcon.src = "../IMAGENS/seta-direita.png"; // Troca para imagem de expandir
     }
-    adjustSidebarHeight(); // Ajustar altura ao expandir/contrair
+    setTimeout(adjustSidebarHeight, 500);
 });
 
 const menuItems = document.querySelectorAll('.has-submenu');
