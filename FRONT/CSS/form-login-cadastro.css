@@ -71,12 +71,13 @@ button > a {
 
 @media screen and (max-width: 1050px) {
     .bot {
-        width: calc(100% - 40px); /* 80% de 50px */
+        width: calc(100% - 50px); /* 80% de 50px */
         margin: auto;
     }
 
     #pessoais {
         display: block;
+        width: calc(100% - 40px);
     }
 }
 
@@ -85,11 +86,11 @@ button > a {
     /******* Configurações de responsividade do formulario de login *******/
 
     #cadastro {
-        width: calc(100% - 40px); /* 80% de 50px */
+        width: calc(100% - 50px); /* 80% de 50px */
     }
 
     .grid {
-        font-size: 0.912em; /* 80% de 1.14em */
+        font-size: 1.14em; /* 80% de 1.14em */
     }
 
     .bot {
@@ -97,6 +98,6 @@ button > a {
     }
 
     .login {
-        width: calc(100% - 40px); /* 80% de 50px */
+        width: calc(100% - 50px); /* 80% de 50px */
     }
 }

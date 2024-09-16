@@ -74,21 +74,21 @@ li ul li {
 }
 
 .menu li .toggle-submenu img {
-    width: 9.6px; /* 80% de 12px */
-    height: 9.6px; /* 80% de 12px */
+    width: 12px; /* 80% de 12px */
+    height: 12px; /* 80% de 12px */
 }
 
 .content {
     flex-grow: 1;
-    padding: 16px; /* 80% de 20px */
+    padding: 20px; /* 80% de 20px */
 }
 
 .menulateral {
-    width: 64%; /* 80% de 80% */
+    width: 80%; /* 80% de 80% */
 }
 
 @media screen and (max-width: 650px) {
     .sidebar.expanded {
-        width: 240px; /* 80% de 300px */
+        width: 300px; /* 80% de 300px */
     }
 }

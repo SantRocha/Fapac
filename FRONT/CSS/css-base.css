@@ -162,13 +162,14 @@ footer {
 
     /******* Configurações de responsividade do cabeçalho da pagina *******/
     header {
-        min-width: 320px; /* 80% de 400px */
+        min-width: 400px; /* 80% de 400px */
+        height: 190px;
         display: block;
     }
 
     #logo img {
         height: auto;
-        width: 296px; /* 80% de 370px */
+        width: 370px; /* 80% de 370px */
         margin: auto;
     }
 
@@ -179,12 +180,12 @@ footer {
 
     #logo {
         margin: auto;
-        padding: 12px 0px; /* 80% de 15px 0px */
+        padding: 15px 0px; /* 80% de 15px 0px */
     }
 
     nav {
-        margin-top: 28px; /* 80% de 35px */
-        min-width: 320px; /* 80% de 400px */
+        margin-top: 35px; /* 80% de 35px */
+        min-width: 400px; /* 80% de 400px */
         width: 100%;
         position: absolute;
     }
@@ -202,9 +203,9 @@ footer {
 
     nav li {
         margin: auto;
-        width: 280px; /* 80% de 350px */
+        width: 350px; /* 80% de 350px */
         text-align: center;
-        border-radius: 5.6px; /* 80% de 7px */
+        border-radius: 7px; /* 80% de 7px */
     }
 
     nav li:hover {
@@ -219,7 +220,7 @@ footer {
     /******* Configurações de responsividade do corpo da pagina *******/
 
     main {
-        min-width: 320px; /* 80% de 400px */
+        min-width: 400px; /* 80% de 400px */
         height: 100%;
         min-height: 70vh;
     }
@@ -228,13 +229,13 @@ footer {
 
     footer {
         height: auto;
-        min-width: 320px; /* 80% de 400px */
+        min-width: 400px; /* 80% de 400px */
         display: block;
     }
 
     #info-rodape {
-        margin: 16px auto; /* 80% de 20px */
-        width: 64%; /* 80% de 80% */
+        margin: 20px auto; /* 80% de 20px */
+        width: 80%; /* 80% de 80% */
         overflow: hidden;
         word-break: break-word;
     }
@@ -245,6 +246,6 @@ footer {
 
     #redes-rodape {
         align-items: center;
-        width: 80%; /* 80% de 100% */
+        width: 100%; /* 80% de 100% */
     }
 }

@@ -25,15 +25,15 @@ form {
 }
 
 .dados-pesquisador {
-    margin: 8px 0px 56px; /* 80% de 10px 0px 70px */
+    margin: 10px 0px 70px; /* 80% de 10px 0px 70px */
     display: inline-flex;
     border: 1.6px solid black; /* 80% de 2px */
 }
 
 .dados {
     display: grid;
-    grid-template-columns: 1fr 1.6fr; /* Proporcional a 1fr 2fr */
-    gap: 0.64em; /* 80% de 0.8em */
+    grid-template-columns: 1fr 2fr; /* Proporcional a 1fr 2fr */
+    gap: 0.8em; /* 80% de 0.8em */
     padding: 12px; /* 80% de 15px */
     font-size: 0.96em; /* 80% de 1.2em */
 }
@@ -112,11 +112,11 @@ form {
 @media screen and (max-width: 1050px) {
 
     .informacoes {
-        padding: 20px; /* 80% de 25px */
+        padding: 25px; /* 80% de 25px */
     }
 
     form {
-        width: calc(100% - 40px); /* 80% de 50px */
+        width: calc(100% - 50px); /* 80% de 50px */
     }
 
     .dados-pesquisador {
@@ -128,10 +128,14 @@ form {
 
     .dados {
         grid-template-columns: 1fr;
-        gap: 0.32em; /* 80% de 0.4em */
+        gap: 0.4em; /* 80% de 0.4em */
     }
 
     .correspondecia {
         display: block;
+    }
+
+    .cadastro {
+        width: calc(100% - 40px);
     }
 }
